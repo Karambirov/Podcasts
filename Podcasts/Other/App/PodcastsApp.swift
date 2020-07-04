@@ -11,7 +11,7 @@ import SwiftUI
 struct PodcastsApp: App {
     var body: some Scene {
         WindowGroup {
-            SearchListView()
+            SearchListView(searchService: SearchService<PodcastMediaType>())
         }
     }
 }
