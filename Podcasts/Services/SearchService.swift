@@ -44,7 +44,6 @@ extension SearchService: SearchServiceProtocol {
     ) {
         let components = AppleiTunesSearchURLComponents<T>(term: term)
         guard let url = components.url else {
-            print("Error creating URL")
             completion(.failure(.creatingURL))
             return
         }
